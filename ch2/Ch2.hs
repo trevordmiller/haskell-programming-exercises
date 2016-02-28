@@ -1,4 +1,4 @@
-module Main where
+module Ch2 where
 
 
 -- ===========================
@@ -34,10 +34,10 @@ circleArea radius = 3.14 * radius ^ 2
 -- ===========================
 
 -- 1
-let area x = 3.14 * (x * x)
+area x = 3.14 * (x * x)
 
 -- 2
-let double x = x * 2
+double x = x * 2
 
 -- 3
 x = 7
