@@ -15,17 +15,19 @@ import GHC.Int
 -- Uses the type constructors of data declarations
 -- Syntax: {someFunction} :: [{? type arguments ?} => ] {SomeTypeConstructor of a param} -> {SomeTypeConstructor of the return value}
 
+-- FUNCTION DECLARATIONS
+-- Uses the data constructors of data declarations
+-- Syntax: {someFunction} {some param variable} = {someExpression that uses the param variables to reduce to someDataConstructor of SomeTypeConstructor of the return value}
+
+
 -- ----------------------------------------------------------------------------------------------
--- Built-in / imported modules already have data declarations and type signatures defined
+-- Built-in / imported modules already have data declarations, type signatures, and function declarations defined
 -- ----------------------------------------------------------------------------------------------
 
 -- FUNCTION APPLICATION
--- Uses the data constructors of data declarations
--- Syntax: {someFunction} {someDataConstructor of SomeTypeConstructor of the param} = {someExpression that reduces to someDataConstructor of SomeTypeConstructor of the return value}
+-- Use functions
+-- Syntax: {someFunction} {someDataConstructor of SomeTypeConstructor of the param}
 
-
-
--- NOTES TO CLEAN UP
 -- Function "precedence" is a 9, unless precendence in the expression is specified
 -- EX: not True && False //-> False, not (True && False) //-> True
 
@@ -36,7 +38,6 @@ import GHC.Int
 
 -- TUPLES
 -- fst selects first element, snd selects second element
-
 
 -- Use "div" for ints, "/" for franctional numbers
 
